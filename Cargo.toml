@@ -1,0 +1,20 @@
+[package]
+name = "boost_type_index"
+description = "Boost C++ library boost_type_index packaged using Zanbil"
+version = "0.1.0"
+edition = "2024"
+links = "boost_type_index"
+license = "BSL-1.0"
+repository = "https://github.com/zanbilify/boost_type_index"
+
+[package.metadata.zanbil]
+make_dependencies_public = true
+
+[dependencies]
+boost_config = { version = "0.1.0", path = "../boost_config" }
+boost_container_hash = { version = "0.1.0", path = "../boost_container_hash" }
+boost_core = { version = "0.1.0", path = "../boost_core" }
+boost_throw_exception = { version = "0.1.0", path = "../boost_throw_exception" }
+
+[build-dependencies]
+zanbil-boost-build = "0.1.0"
